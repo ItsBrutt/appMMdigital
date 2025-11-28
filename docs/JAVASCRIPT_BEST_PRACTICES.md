@@ -311,3 +311,9 @@ items.forEach(function(item) { }); // Old style
 - [MDN: let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - [MDN: Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 - [JavaScript.info: Modern JavaScript](https://javascript.info/)
+
+## Related Guides
+
+- See `ASYNC_AWAIT_GUIDE.md` for asynchronous programming patterns
+- See `../README.md` for project setup and scripts
+- See `CSS_ARCHITECTURE.md` for CSS best practices
