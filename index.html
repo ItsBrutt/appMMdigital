@@ -20,9 +20,9 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="glass-card nav-header">
+    <nav class="glass-card nav-header" aria-label="Navegación principal">
         <div class="logo">MM Digital</div>
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -35,6 +35,10 @@
             <li><a href="#contacto" class="btn btn-primary nav-cta">Comenzar</a></li>
         </ul>
     </nav>
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-main" style="position: absolute; left: -9999px; z-index: 999;">Saltar al
+        contenido principal</a>
 
     <!-- Hero Section -->
     <header id="inicio"
@@ -56,320 +60,335 @@
         </div>
     </header>
 
-    <!-- Value Proposition Section -->
-    <section id="valor" style="background: rgba(255,255,255,0.02); padding: 5rem 2rem;">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">
-                    Somos tu <span style="color: var(--accent-color);">Puente</span> en la Transformación Digital
-                </h2>
-                <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 3rem; line-height: 1.8;">
-                    No vendemos sitios web. Construimos <strong style="color: var(--text-color);">identidades
-                        digitales</strong>
-                    que se convierten en los cimientos sólidos de tu presencia online.
-                </p>
-            </div>
+    <!-- Main Content -->
+    <main id="main-content">
 
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
-                <!-- Pilar 1: Identidad -->
-                <div class="glass-card" style="padding: 2rem; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
-                    <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Identidad Digital</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6;">
-                        Tu identidad digital es el <strong>cimiento</strong> de todo. Sin una base clara,
-                        cualquier estrategia se desmorona. Definimos quién eres en el mundo digital.
+        <!-- Value Proposition Section -->
+        <section id="valor" style="background: rgba(255,255,255,0.02); padding: 5rem 2rem;">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">
+                        Somos tu <span style="color: var(--accent-color);">Puente</span> en la Transformación Digital
+                    </h2>
+                    <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 3rem; line-height: 1.8;">
+                        No vendemos sitios web. Construimos <strong style="color: var(--text-color);">identidades
+                            digitales</strong>
+                        que se convierten en los cimientos sólidos de tu presencia online.
                     </p>
                 </div>
 
-                <!-- Pilar 2: Puente -->
-                <div class="glass-card" style="padding: 2rem; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌉</div>
-                    <h3 style="color: var(--accent-color); margin-bottom: 1rem;">El Puente</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6;">
-                        Conectamos tu visión con la realidad digital. No te dejamos solo con "un sitio web",
-                        te acompañamos en cada paso de tu <strong>transformación</strong>.
-                    </p>
-                </div>
-
-                <!-- Pilar 3: Cimientos -->
-                <div class="glass-card" style="padding: 2rem; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏗️</div>
-                    <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Estructura Sólida</h3>
-                    <p style="color: var(--text-muted); line-height: 1.6;">
-                        Construimos sobre <strong>cimientos firmes</strong>. Cada decisión técnica está pensada
-                        para que tu presencia digital crezca sin límites.
-                    </p>
-                </div>
-            </div>
-
-            <div
-                style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(251, 191, 36, 0.1)); border-radius: 16px; border: 1px solid var(--glass-border);">
-                <p style="font-size: 1.3rem; color: var(--text-color); font-weight: 600; margin-bottom: 1rem;">
-                    "Sin identidad digital clara, no hay presencia. Sin presencia, no hay crecimiento."
-                </p>
-                <p style="color: var(--text-muted); font-size: 0.95rem;">
-                    Por eso empezamos siempre por lo esencial: <strong style="color: var(--accent-color);">definir quién
-                        eres</strong>
-                    antes de construir qué muestras.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Digital Journey Section -->
-    <section id="viaje">
-        <div class="container">
-            <h2>Tu Viaje de Transformación</h2>
-            <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
-                No necesitas empezar con todo. Diseñamos un camino escalable que crece junto con tu negocio.
-            </p>
-
-            <div class="journey-timeline">
-                <!-- Step 1: Semilla -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">🌱</div>
-                    <div class="timeline-content glass-card">
-                        <span class="step-number">01</span>
-                        <h3>Intención (Semilla)</h3>
-                        <p class="emotional-text">
-                            "Donde todo nace. Un espacio seguro para validar tu idea sin miedo ni grandes costos."
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <!-- Pilar 1: Identidad -->
+                    <div class="glass-card" style="padding: 2rem; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;" aria-hidden="true">🎯</div>
+                        <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Identidad Digital</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6;">
+                            Tu identidad digital es el <strong>cimiento</strong> de todo. Sin una base clara,
+                            cualquier estrategia se desmorona. Definimos quién eres en el mundo digital.
                         </p>
-                        <div class="technical-details">
-                            <ul>
-                                <li>Estructura Serverless</li>
-                                <li>Landing Page Esencial</li>
-                                <li>Validación Rápida</li>
-                            </ul>
-                        </div>
+                    </div>
+
+                    <!-- Pilar 2: Puente -->
+                    <div class="glass-card" style="padding: 2rem; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;" aria-hidden="true">🌉</div>
+                        <h3 style="color: var(--accent-color); margin-bottom: 1rem;">El Puente</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6;">
+                            Conectamos tu visión con la realidad digital. No te dejamos solo con "un sitio web",
+                            te acompañamos en cada paso de tu <strong>transformación</strong>.
+                        </p>
+                    </div>
+
+                    <!-- Pilar 3: Cimientos -->
+                    <div class="glass-card" style="padding: 2rem; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;" aria-hidden="true">🏗️</div>
+                        <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Estructura Sólida</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6;">
+                            Construimos sobre <strong>cimientos firmes</strong>. Cada decisión técnica está pensada
+                            para que tu presencia digital crezca sin límites.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Step 2: Identidad -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">🌿</div>
-                    <div class="timeline-content glass-card">
-                        <span class="step-number">02</span>
-                        <h3>Claridad (Identidad)</h3>
-                        <p class="emotional-text">
-                            "Tu voz propia. Un diseño que respira tu esencia y conecta con quienes te buscan."
-                        </p>
-                        <div class="technical-details">
-                            <ul>
-                                <li>Dominio .cl Propio</li>
-                                <li>Diseño a Medida</li>
-                                <li>Narrativa de Marca</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 3: Presencia -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">🌳</div>
-                    <div class="timeline-content glass-card">
-                        <span class="step-number">03</span>
-                        <h3>Estructura (Pyme)</h3>
-                        <p class="emotional-text">
-                            "Cimientos firmes. Automatización y herramientas que sostienen tu crecimiento real."
-                        </p>
-                        <div class="technical-details">
-                            <ul>
-                                <li>Web Corporativa Robusta</li>
-                                <li>Integraciones (Mapas/Forms)</li>
-                                <li>Optimización SEO</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 4: Imperio -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">🏰</div>
-                    <div class="timeline-content glass-card">
-                        <span class="step-number">04</span>
-                        <h3>Legado (Imperio)</h3>
-                        <p class="emotional-text">
-                            "Tu Santuario completo. Un ecosistema digital que trasciende y domina tu nicho."
-                        </p>
-                        <div class="technical-details">
-                            <ul>
-                                <li>E-commerce / Apps</li>
-                                <li>Automatización Total</li>
-                                <li>Soporte Prioritario</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div
+                    style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(251, 191, 36, 0.1)); border-radius: 16px; border: 1px solid var(--glass-border);">
+                    <p style="font-size: 1.3rem; color: var(--text-color); font-weight: 600; margin-bottom: 1rem;">
+                        "Sin identidad digital clara, no hay presencia. Sin presencia, no hay crecimiento."
+                    </p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">
+                        Por eso empezamos siempre por lo esencial: <strong style="color: var(--accent-color);">definir
+                            quién
+                            eres</strong>
+                        antes de construir qué muestras.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pre-Plan / Demo Section -->
-    <section id="demo" style="background: rgba(255,255,255,0.02);">
-        <div class="container">
-            <div class="demo-preview">
-                <div class="demo-text">
-                    <h2 style="text-align: left; margin-bottom: 1.5rem;">El "Pre-Plan": Tu Punto de Partida</h2>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">
-                        Sabemos que al iniciar, cada peso cuenta. Por eso creamos una solución ultra-accesible que te da
-                        profesionalismo sin descapitalizarte.
-                    </p>
-                    <ul class="features-list">
-                        <li>Estructura web esencial (Landing Page)</li>
-                        <li>Alojamiento en servidores gratuitos optimizados</li>
-                        <li>Diseño limpio y funcional</li>
-                        <li>Listo para escalar cuando tú lo estés</li>
-                    </ul>
-                    <div style="margin-top: 2rem;">
-                        <span style="font-size: 2.5rem; font-weight: 700; color: var(--accent-color);">Bajo Costo</span>
-                        <p style="font-size: 0.9rem; color: var(--text-muted);">Pago único accesible</p>
-                    </div>
-                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
-                        <a href="demo.html" target="_blank" class="btn btn-primary">Ver Demo en Vivo</a>
-                        <a href="#contacto" class="btn btn-secondary">Solicitar Pre-Plan</a>
-                    </div>
-                </div>
-                <div class="demo-visual glass-card">
-                    <!-- Placeholder for visual representation of the simple structure -->
-                    <div
-                        style="position: absolute; inset: 20px; border: 2px dashed var(--glass-border); border-radius: 10px; display: flex; flex-direction: column; gap: 10px; padding: 20px; opacity: 0.5;">
-                        <div style="height: 40px; background: var(--glass-border); border-radius: 4px;"></div>
-                        <div style="height: 150px; background: var(--glass-border); border-radius: 4px;"></div>
-                        <div style="flex: 1; display: flex; gap: 10px;">
-                            <div style="flex: 1; background: var(--glass-border); border-radius: 4px;"></div>
-                            <div style="flex: 1; background: var(--glass-border); border-radius: 4px;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="servicios">
-        <div class="container">
-            <h2>Tu Camino, Tu Ritmo</h2>
-            <p style="text-align: center; color: var(--text-muted); max-width: 700px; margin: 0 auto 3rem;">
-                Cada etapa de tu viaje digital tiene un propósito. No se trata de "comprar un plan", sino de construir
-                tu Santuario paso a paso, con intención y claridad.
-            </p>
-            <div class="pricing-grid">
-                <!-- Semilla -->
-                <div class="glass-card price-card">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌱</div>
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Plan Semilla</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Intención</p>
-                    <div class="price" style="font-size: 2rem;"> $70.000<span>/único</span></div>
-                    <p style="color: var(--text-muted); font-style: italic; margin: 1rem 0; font-size: 0.95rem;">
-                        "El primer ladrillo. Valida tu idea sin descapitalizarte."
-                    </p>
-                    <ul class="features-list" style="min-height: 140px;">
-                        <li>Landing Page Esencial</li>
-                        <li>Hosting Serverless Gratuito</li>
-                        <li>Enlace WhatsApp Directo</li>
-                        <li>Entrega en 48hrs</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-secondary" style="margin-top: auto; width: 100%;">Comenzar
-                        Aquí</a>
-                </div>
-
-                <!-- Identidad Digital - RECOMENDADO -->
-                <div class="glass-card price-card featured">
-                    <div
-                        style="position: absolute; top: -10px; right: 10px; background: var(--gold-accent); color: #000; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">
-                        RECOMENDADO
-                    </div>
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌿</div>
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Plan Identidad Digital</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Claridad</p>
-                    <div class="price" style="font-size: 2rem;">$280.000<span>/desde</span></div>
-                    <p style="color: var(--text-muted); font-style: italic; margin: 1rem 0; font-size: 0.95rem;">
-                        "Tu voz única. Un diseño que respira tu esencia."
-                    </p>
-                    <ul class="features-list" style="min-height: 140px;">
-                        <li>Dominio .cl Propio</li>
-                        <li>Diseño Visual a Medida</li>
-                        <li>Narrativa de Marca</li>
-                        <li>SEO + Indexación</li>
-                        <li>WhatsApp Business</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-primary" style="margin-top: auto; width: 100%;">Definir mi
-                        Identidad</a>
-                </div>
-
-                <!-- Presencia Pyme -->
-                <div class="glass-card price-card">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌳</div>
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Plan Presencia Pyme</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Estructura</p>
-                    <div class="price" style="font-size: 2rem;">$550.000<span>/desde</span></div>
-                    <p style="color: var(--text-muted); font-style: italic; margin: 1rem 0; font-size: 0.95rem;">
-                        "Cimientos firmes. Automatización que sostiene tu crecimiento."
-                    </p>
-                    <ul class="features-list" style="min-height: 140px;">
-                        <li>Web Corporativa (4-6 secciones)</li>
-                        <li>UX/UI Personalizada</li>
-                        <li>Integraciones (Mapas/Forms)</li>
-                        <li>Optimización de Carga</li>
-                        <li>Base para Escalabilidad</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-secondary" style="margin-top: auto; width: 100%;">Escalar mi
-                        Presencia</a>
-                </div>
-
-                <!-- Imperio Digital -->
-                <div class="glass-card price-card">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏰</div>
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Plan Imperio Digital</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Legado</p>
-                    <div class="price" style="font-size: 2rem;">Consultar<span>/proyecto</span></div>
-                    <p style="color: var(--text-muted); font-style: italic; margin: 1rem 0; font-size: 0.95rem;">
-                        "Tu Santuario completo. Un ecosistema que trasciende."
-                    </p>
-                    <ul class="features-list" style="min-height: 140px;">
-                        <li>E-commerce / Marketplace</li>
-                        <li>Apps & Plataformas</li>
-                        <li>Automatización Total</li>
-                        <li>Seguridad SSL Avanzada</li>
-                        <li>Soporte Prioritario</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-secondary" style="margin-top: auto; width: 100%;">Construir mi
-                        Imperio</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" style="margin-bottom: 4rem;">
-        <div class="container">
-            <div class="glass-card" style="padding: 3rem; max-width: 800px; margin: 0 auto;">
-                <h2>Comienza tu Transformación</h2>
-                <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
-                    Cuéntanos en qué etapa estás y te ayudaremos a dar el siguiente paso.
+        <!-- Digital Journey Section -->
+        <section id="viaje" aria-labelledby="viaje-heading">
+            <div class="container">
+                <h2 id="viaje-heading">Tu Viaje de Transformación</h2>
+                <p style="text-align: center; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                    No necesitas empezar con todo. Diseñamos un camino escalable que crece junto con tu negocio.
                 </p>
-                <form class="contact-form">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <input type="text" placeholder="Nombre" required>
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <select
-                        style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 8px; color: #fff;">
-                        <option value="" style="background: #0f172a;">Selecciona tu etapa actual</option>
-                        <option value="idea" style="background: #0f172a;">Tengo una idea (Pre-Plan)</option>
-                        <option value="negocio" style="background: #0f172a;">Tengo un negocio, necesito web (Identidad)
-                        </option>
-                        <option value="expansion" style="background: #0f172a;">Quiero escalar mi presencia (Imperio)
-                        </option>
-                    </select>
-                    <textarea rows="5" placeholder="Cuéntanos más sobre tu proyecto..."></textarea>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Iniciar
-                        Conversación</button>
-                </form>
+
+                <div class="journey-timeline">
+                    <!-- Step 1: Semilla -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">🌱</div>
+                        <div class="timeline-content glass-card">
+                            <span class="step-number" aria-hidden="true">01</span>
+                            <h3>Intención (Semilla)</h3>
+                            <p class="emotional-text">
+                                "Donde todo nace. Un espacio seguro para validar tu idea sin miedo ni grandes costos."
+                            </p>
+                            <div class="technical-details">
+                                <ul>
+                                    <li>Estructura Serverless</li>
+                                    <li>Landing Page Esencial</li>
+                                    <li>Validación Rápida</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Step 2: Identidad -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">🌿</div>
+                        <div class="timeline-content glass-card">
+                            <span class="step-number" aria-hidden="true">02</span>
+                            <h3>Claridad (Identidad)</h3>
+                            <p class="emotional-text">
+                                "Tu voz propia. Un diseño que respira tu esencia y conecta con quienes te buscan."
+                            </p>
+                            <div class="technical-details">
+                                <ul>
+                                    <li>Dominio .cl Propio</li>
+                                    <li>Diseño a Medida</li>
+                                    <li>Narrativa de Marca</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Step 3: Presencia -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">🌳</div>
+                        <div class="timeline-content glass-card">
+                            <span class="step-number" aria-hidden="true">03</span>
+                            <h3>Estructura (Pyme)</h3>
+                            <p class="emotional-text">
+                                "Cimientos firmes. Automatización y herramientas que sostienen tu crecimiento real."
+                            </p>
+                            <div class="technical-details">
+                                <ul>
+                                    <li>Web Corporativa Robusta</li>
+                                    <li>Integraciones (Mapas/Forms)</li>
+                                    <li>Optimización SEO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Step 4: Imperio -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">🏰</div>
+                        <div class="timeline-content glass-card">
+                            <span class="step-number" aria-hidden="true">04</span>
+                            <h3>Legado (Imperio)</h3>
+                            <p class="emotional-text">
+                                "Tu Santuario completo. Un ecosistema digital que trasciende y domina tu nicho."
+                            </p>
+                            <div class="technical-details">
+                                <ul>
+                                    <li>E-commerce / Apps</li>
+                                    <li>Automatización Total</li>
+                                    <li>Soporte Prioritario</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Pre-Plan / Demo Section -->
+        <section id="demo" style="background: rgba(255,255,255,0.02);" aria-labelledby="demo-heading">
+            <div class="container">
+                <div class="demo-preview">
+                    <div class="demo-text">
+                        <h2 id="demo-heading" style="text-align: left; margin-bottom: 1.5rem;">El "Pre-Plan": Tu Punto
+                            de Partida</h2>
+                        <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">
+                            Sabemos que al iniciar, cada peso cuenta. Por eso creamos una solución ultra-accesible que
+                            te da
+                            profesionalismo sin descapitalizarte.
+                        </p>
+                        <ul class="features-list">
+                            <li>Estructura web esencial (Landing Page)</li>
+                            <li>Alojamiento en servidores gratuitos optimizados</li>
+                            <li>Diseño limpio y funcional</li>
+                            <li>Listo para escalar cuando tú lo estés</li>
+                        </ul>
+                        <div style="margin-top: 2rem;">
+                            <span style="font-size: 2.5rem; font-weight: 700; color: var(--accent-color);">Bajo
+                                Costo</span>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Pago único accesible</p>
+                        </div>
+                        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                            <a href="demo.html" target="_blank" class="btn btn-primary">Ver Demo en Vivo</a>
+                            <a href="#contacto" class="btn btn-secondary">Solicitar Pre-Plan</a>
+                        </div>
+                    </div>
+                    <div class="demo-visual glass-card" aria-hidden="true">
+                        <!-- Placeholder for visual representation of the simple structure -->
+                        <div
+                            style="position: absolute; inset: 20px; border: 2px dashed var(--glass-border); border-radius: 10px; display: flex; flex-direction: column; gap: 10px; padding: 20px; opacity: 0.5;">
+                            <div style="height: 40px; background: var(--glass-border); border-radius: 4px;"></div>
+                            <div style="height: 150px; background: var(--glass-border); border-radius: 4px;"></div>
+                            <div style="flex: 1; display: flex; gap: 10px;">
+                                <div style="flex: 1; background: var(--glass-border); border-radius: 4px;"></div>
+                                <div style="flex: 1; background: var(--glass-border); border-radius: 4px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" aria-labelledby="servicios-heading">
+            <div class="container">
+                <h2 id="servicios-heading">Tu Camino, Tu Ritmo</h2>
+                <p style="text-align: center; color: var(--text-muted); max-width: 700px; margin: 0 auto 3rem;">
+                    Cada etapa de tu viaje digital tiene un propósito. No se trata de "comprar un plan", sino de
+                    construir
+                    tu Santuario paso a paso, con intención y claridad.
+                </p>
+                <div class="pricing-grid">
+                    <!-- Semilla -->
+                    <article class="glass-card price-card">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;" aria-hidden="true">🌱</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Plan Semilla</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Intención</p>
+                        <div class="price" style="font-size: 2rem;">$70.000<span>/único</span></div>
+                        <p style="color: var(--text-muted); font-style: italic; margin: 1rem 0; font-size: 0.95rem;">
+                            "El primer ladrillo. Valida tu idea sin descapitalizarte."
+                        </p>
+                        <ul class="features-list" style="min-height: 140px;">
+                            <li>Landing Page Esencial</li>
+                            <li>Hosting Serverless Gratuito</li>
+                            <li>Enlace WhatsApp Directo</li>
+                            <li>Entrega en 48hrs</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-secondary" style="margin-top: auto; width: 100%;">Comenzar
+                            Aquí</a>
+                    </article>
+
+                    <!-- Identidad Digital - RECOMENDADO -->
+                    <article class="glass-card price-card featured">
+                        <div
+                            style="position: absolute; top: -10px; right: 10px; background: var(--gold-accent); color: #000; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">
+                            RECOMENDADO
+                        </div>
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;" aria-hidden="true">🌿</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Plan Identidad Digital</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Claridad</p>
+                        <div class="price" style="font-size: 2rem;">$280.000<span>/desde</span></div>
+                        <p style="color: var(--text-muted); font-style: italic; margin: 1rem 0; font-size: 0.95rem;">
+                            "Tu voz única. Un diseño que respira tu esencia."
+                        </p>
+                        <ul class="features-list" style="min-height: 140px;">
+                            <li>Dominio .cl Propio</li>
+                            <li>Diseño Visual a Medida</li>
+                            <li>Narrativa de Marca</li>
+                            <li>SEO + Indexación</li>
+                            <li>WhatsApp Business</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary" style="margin-top: auto; width: 100%;">Definir mi
+                            Identidad</a>
+                    </article>
+
+                    <!-- Presencia Pyme -->
+                    <article class="glass-card price-card">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;" aria-hidden="true">🌳</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Plan Presencia Pyme</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Estructura</p>
+                        <div class="price" style="font-size: 2rem;">$550.000<span>/desde</span></div>
+                        <p style="color: var(--text-muted); font-style: italic; margin: 1rem 0; font-size: 0.95rem;">
+                            "Cimientos firmes. Automatización que sostiene tu crecimiento."
+                        </p>
+                        <ul class="features-list" style="min-height: 140px;">
+                            <li>Web Corporativa (4-6 secciones)</li>
+                            <li>UX/UI Personalizada</li>
+                            <li>Integraciones (Mapas/Forms)</li>
+                            <li>Optimización de Carga</li>
+                            <li>Base para Escalabilidad</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-secondary" style="margin-top: auto; width: 100%;">Escalar mi
+                            Presencia</a>
+                    </article>
+
+                    <!-- Imperio Digital -->
+                    <article class="glass-card price-card">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;" aria-hidden="true">🏰</div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Plan Imperio Digital</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Legado</p>
+                        <div class="price" style="font-size: 2rem;">Consultar<span>/proyecto</span></div>
+                        <p style="color: var(--text-muted); font-style: italic; margin: 1rem 0; font-size: 0.95rem;">
+                            "Tu Santuario completo. Un ecosistema que trasciende."
+                        </p>
+                        <ul class="features-list" style="min-height: 140px;">
+                            <li>E-commerce / Marketplace</li>
+                            <li>Apps & Plataformas</li>
+                            <li>Automatización Total</li>
+                            <li>Seguridad SSL Avanzada</li>
+                            <li>Soporte Prioritario</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-secondary" style="margin-top: auto; width: 100%;">Construir
+                            mi
+                            Imperio</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" style="margin-bottom: 4rem;" aria-labelledby="contacto-heading">
+            <div class="container">
+                <div class="glass-card" style="padding: 3rem; max-width: 800px; margin: 0 auto;">
+                    <h2 id="contacto-heading">Comienza tu Transformación</h2>
+                    <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">
+                        Cuéntanos en qué etapa estás y te ayudaremos a dar el siguiente paso.
+                    </p>
+                    <form class="contact-form" aria-label="Formulario de contacto">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <input type="text" placeholder="Nombre" required aria-label="Nombre">
+                            <input type="email" placeholder="Email" required aria-label="Email">
+                        </div>
+                        <select
+                            style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 8px; color: #fff;"
+                            aria-label="Etapa actual">
+                            <option value="" style="background: #0f172a;">Selecciona tu etapa actual</option>
+                            <option value="idea" style="background: #0f172a;">Tengo una idea (Pre-Plan)</option>
+                            <option value="negocio" style="background: #0f172a;">Tengo un negocio, necesito web
+                                (Identidad)
+                            </option>
+                            <option value="expansion" style="background: #0f172a;">Quiero escalar mi presencia (Imperio)
+                            </option>
+                        </select>
+                        <textarea rows="5" placeholder="Cuéntanos más sobre tu proyecto..."
+                            aria-label="Mensaje"></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Iniciar
+                            Conversación</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- End Main Content -->
 
     <footer
         style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid var(--glass-border);">

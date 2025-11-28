@@ -1,0 +1,49 @@
+{
+    "name": "mm-digital",
+    "version": "1.0.0",
+    "description": "MM Digital - Tu Viaje de Identidad Digital. Plataforma web para transformación digital escalable.",
+    "main": "index.html",
+    "scripts": {
+        "dev": "npx live-server --port=3000 --open=index.html",
+        "build": "npm run minify:css && npm run minify:js",
+        "minify:css": "npx csso css/style.css --output dist/css/style.min.css",
+        "minify:js": "npx terser js/main.js --compress --mangle --output dist/js/main.min.js",
+        "lint:css": "npx stylelint \"css/**/*.css\"",
+        "lint:js": "npx eslint \"js/**/*.js\"",
+        "format": "npx prettier --write \"**/*.{html,css,js,json,md}\"",
+        "format:check": "npx prettier --check \"**/*.{html,css,js,json,md}\"",
+        "validate:html": "npx html-validate \"*.html\"",
+        "test": "npm run format:check && npm run lint:css && npm run lint:js && npm run validate:html",
+        "deploy:prep": "npm run test && npm run build",
+        "serve:dist": "npx live-server dist --port=8080"
+    },
+    "keywords": [
+        "digital-identity",
+        "web-development",
+        "digital-transformation",
+        "landing-page",
+        "serverless"
+    ],
+    "author": "MM Digital",
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.15.0",
+        "csso-cli": "^4.0.2",
+        "eslint": "^9.15.0",
+        "eslint-config-prettier": "^9.1.0",
+        "html-validate": "^8.11.1",
+        "live-server": "^1.2.2",
+        "prettier": "^3.2.5",
+        "stylelint": "^16.2.1",
+        "stylelint-config-standard": "^36.0.0",
+        "terser": "^5.27.0"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=9.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mmdigital/appMMdigital.git"
+    }
+}
