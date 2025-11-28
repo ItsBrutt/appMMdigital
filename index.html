@@ -161,25 +161,25 @@
             <li><a href="#contacto" class="btn btn-primary nav-cta">Comenzar</a></li>
         </ul>
     </nav>
-
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-to-main" style="position: absolute; left: -9999px; z-index: 999;">Saltar al
-        contenido principal</a>
-
     <!-- Hero Section -->
-    <header id="inicio"
-        style="height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: radial-gradient(circle at top right, #1e293b, #0f172a); padding-top: 80px;">
-        <div class="container">
-            <h1
-                style="font-size: 4rem; margin-bottom: 1.5rem; background: linear-gradient(to right, #fff, var(--accent-color)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
-                Construye tu Imperio Digital <br> <span
-                    style="font-size: 2.5rem; color: var(--text-muted); font-weight: 300;">Paso a Paso</span>
-            </h1>
-            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 2.5rem;">
-                Desde una estructura simple y accesible hasta una presencia web escalable y robusta.
-                Tu identidad digital comienza aquí.
-            </p>
-            <div style="display: flex; gap: 1rem; justify-content: center;">
+    <header id="inicio" class="hero-section">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-text-wrapper">
+                <span class="hero-label">Transformación Digital</span>
+                <h1 class="hero-title">
+                    Construye tu <span class="highlight">Imperio Digital</span><br>
+                    Paso a Paso
+                </h1>
+                <p class="hero-description">
+                    Desde una estructura simple y accesible hasta una presencia web escalable y robusta.
+                    Tu identidad digital comienza aquí.
+                </p>
+            </div>
+
+            <div class="hero-cta-wrapper">
                 <a href="#valor" class="btn btn-primary">Descubre Nuestro Valor</a>
                 <a href="#viaje" class="btn btn-secondary">Ver el Viaje</a>
             </div>
