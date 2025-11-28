@@ -123,11 +123,26 @@ header#inicio {
     align-items: center;
 }
 
-.logo {
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    z-index: 1001;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.5));
+}
+
+.logo-text {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--text-color);
-    z-index: 1001;
+    letter-spacing: -0.5px;
 }
 
 /* Mobile Menu Button */
