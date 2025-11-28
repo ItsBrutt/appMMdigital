@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Pre-Plan - Tu Nombre Aquí</title>
+    <meta name="description" content="Ejemplo de estructura web accesible para emprendedores.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --accent-color: #0f172a;
+            --glass-bg: rgba(255, 255, 255, 0.9);
+            --glass-border: rgba(0, 0, 0, 0.05);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #f1f5f9;
+                --accent-color: #38bdf8;
+                --glass-bg: rgba(15, 23, 42, 0.8);
+                --glass-border: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--text-color);
+            color: var(--text-color);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 0;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--glass-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--glass-border);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Demo Banner */
+        .demo-banner {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.85rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .demo-banner a {
+            color: inherit;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo-banner">
+        Esta es una demostración del <strong>Plan Semilla (Pre-Plan)</strong>. <a href="index.html">Volver a MM
+            Digital</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">Tu Nombre/Negocio</div>
+            <a href="#contacto" class="btn btn-outline">Contacto</a>
+        </header>
+
+        <section class="hero">
+            <h1>Tu Primer Paso Digital</h1>
+            <p>Una estructura simple, profesional y accesible para comenzar tu viaje de identidad digital.</p>
+            <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>
+                Hola, soy [Tu Nombre]. Ayudo a mis clientes a [Tu Propuesta de Valor].
+                Este espacio es mi carta de presentación digital, diseñada para ser rápida,
+                clara y efectiva. Aquí puedes contar tu historia brevemente.
+            </p>
+        </section>
+
+        <section id="servicios">
+            <h2>Mis Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción breve de tu servicio principal. ¿Qué problema resuelves?</p>
+                </div>
+                <div class="service-card">
+                    <h3>Servicio 2</h3>
+                    <p>Descripción de tu segundo servicio. Enfócate en el beneficio para el cliente.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Producto A</h3>
+                    <p>Si vendes productos, puedes listarlos aquí con un enlace a WhatsApp.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Hablemos</h2>
+            <p style="margin-bottom: 1.5rem;">¿Listo para trabajar juntos? Contáctame directamente.</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="#" class="btn btn-primary">WhatsApp</a>
+                <a href="mailto:ejemplo@email.com" class="btn btn-outline">Enviar Email</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Tu Negocio. Creado con el <strong>Plan Semilla</strong> de MM Digital.</p>
+            <div style="margin-top: 1rem;">
+                <a href="index.html"
+                    style="color: var(--accent-color); text-decoration: none; font-weight: 600;">Escalar a Identidad
+                    Digital &rarr;</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
