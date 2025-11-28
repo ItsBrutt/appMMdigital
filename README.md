@@ -37,6 +37,7 @@ El sitio se abrirá automáticamente en `http://localhost:3000`
 - `npm run lint:js` - Verifica JavaScript con ESLint
 - `npm run validate:html` - Valida estructura HTML
 - `npm run format` - Formatea código con Prettier
+- `npm run format:check` - Verifica formato (para CI/CD)
 
 ### Deployment
 - `npm run deploy:prep` - Prepara proyecto para deployment (test + build)
@@ -49,10 +50,15 @@ appMMdigital/
 │   └── style.css          # Estilos principales
 ├── js/
 │   └── main.js            # JavaScript principal
+├── docs/
+│   └── CSS_ARCHITECTURE.md # Guía de arquitectura CSS
 ├── dist/                  # Build de producción (generado)
 ├── index.html             # Página principal
 ├── demo.html              # Demo del Pre-Plan
 ├── package.json           # Configuración del proyecto
+├── eslint.config.js       # Configuración ESLint (flat config)
+├── .prettierrc            # Configuración Prettier
+├── .stylelintrc.json      # Configuración Stylelint
 └── README.md              # Este archivo
 ```
 
@@ -68,19 +74,52 @@ MM Digital se enfoca en ser el **puente** en la transformación digital de sus c
 
 ## 🛠️ Tecnologías
 
-- HTML5 semántico
-- CSS3 con Glassmorphism
-- JavaScript Vanilla (ES6+)
-- Node.js para tooling
-- Live Server para desarrollo
-- Prettier, ESLint, Stylelint para calidad
+- **HTML5** semántico con landmarks (nav, main, footer)
+- **CSS3** con Glassmorphism y CSS Variables
+- **JavaScript** Vanilla (ES6+)
+- **Node.js** para tooling de desarrollo
+- **ESLint 9+** (flat config) para calidad de código
+- **Prettier** para formateo consistente
+- **Stylelint** para CSS limpio
+
+## 🎨 Arquitectura CSS
+
+El proyecto usa un enfoque híbrido:
+- **CSS Variables** para design tokens
+- **Utility classes** para patrones comunes
+- **BEM methodology** para nuevos componentes
+
+Ver [docs/CSS_ARCHITECTURE.md](docs/CSS_ARCHITECTURE.md) para guía completa.
 
 ## 📝 Convenciones de Código
 
+### HTML
+- Usar elementos semánticos (nav, main, article, section)
+- Un único `<h1>` por página
+- Jerarquía lógica de encabezados (h1 > h2 > h3)
+- Atributos ARIA para accesibilidad
+
+### CSS
 - Indentación: 4 espacios
-- Comillas: simples para JS, dobles para HTML
-- Semicolons: obligatorios en JS
-- Naming: kebab-case para CSS, camelCase para JS
+- Usar CSS Variables para valores reutilizables
+- BEM para nuevos componentes (`.block__element--modifier`)
+- Mobile-first responsive design
+
+### JavaScript
+- Indentación: 4 espacios
+- Comillas simples
+- Semicolons obligatorios
+- `const` por defecto, `let` cuando sea necesario
+- Arrow functions para callbacks
+- Naming: camelCase
+
+## ♿ Accesibilidad
+
+- Navegación por teclado completa
+- Skip-to-content link
+- ARIA labels y landmarks
+- Contraste de color WCAG AA
+- Texto alternativo para imágenes
 
 ## 🚢 Deployment
 
@@ -92,3 +131,12 @@ MM Digital se enfoca en ser el **puente** en la transformación digital de sus c
 ## 📄 Licencia
 
 ISC © MM Digital
+
+## 🤝 Contribución
+
+Para contribuir al proyecto:
+
+1. Seguir las convenciones de código
+2. Ejecutar `npm test` antes de commit
+3. Usar `npm run format` para formatear código
+4. Consultar `docs/CSS_ARCHITECTURE.md` para CSS
