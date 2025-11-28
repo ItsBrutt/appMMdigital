@@ -102,6 +102,12 @@ h3 {
     margin-bottom: 1rem;
 }
 
+/* Scroll Offset for Fixed Header */
+section,
+header#inicio {
+    scroll-margin-top: 100px;
+}
+
 /* Navigation */
 .nav-header {
     position: fixed;
