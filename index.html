@@ -4,9 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Digital - Tu Viaje de Identidad Digital</title>
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- SEO Meta Tags -->
+    <title>MM Digital - Tu Viaje de Identidad Digital | Desarrollo Web Profesional</title>
     <meta name="description"
-        content="Comienza tu transformación digital con MM Digital. Desde planes iniciales accesibles hasta la construcción de tu imperio digital.">
+        content="Transformación digital profesional. Desde landing pages hasta ecosistemas digitales completos. Construye tu identidad digital paso a paso con MM Digital.">
+    <meta name="keywords"
+        content="desarrollo web, identidad digital, transformación digital, diseño web, landing page, Chile, Santiago, presencia online, web pyme">
+    <meta name="author" content="MM Digital">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mmdigital.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mmdigital.com">
+    <meta property="og:title" content="MM Digital - Tu Viaje de Identidad Digital">
+    <meta property="og:description"
+        content="Transformación digital profesional. Construye tu identidad digital paso a paso. Desde una idea hasta un imperio digital.">
+    <meta property="og:image" content="https://mmdigital.com/images/og-image.jpg">
+    <meta property="og:site_name" content="MM Digital">
+    <meta property="og:locale" content="es_CL">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mmdigital">
+    <meta name="twitter:creator" content="@mmdigital">
+    <meta name="twitter:title" content="MM Digital - Tu Viaje de Identidad Digital">
+    <meta name="twitter:description"
+        content="Transformación digital profesional. Construye tu identidad digital paso a paso.">
+    <meta name="twitter:image" content="https://mmdigital.com/images/twitter-card.jpg">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +48,99 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mmdigital.com/#organization",
+          "name": "MM Digital",
+          "url": "https://mmdigital.com",
+          "logo": "https://mmdigital.com/images/logo.png",
+          "description": "Agencia de transformación digital especializada en identidad digital y desarrollo web profesional.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL",
+            "addressLocality": "Santiago"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "email": "contacto@mmdigital.com",
+            "availableLanguage": ["Spanish"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mmdigital.com/#website",
+          "url": "https://mmdigital.com",
+          "name": "MM Digital",
+          "publisher": {
+            "@id": "https://mmdigital.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Desarrollo Web y Transformación Digital",
+          "provider": {
+            "@id": "https://mmdigital.com/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Identidad Digital",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plan Semilla",
+                  "description": "Landing Page esencial para validar tu idea. Incluye hosting serverless gratuito y entrega en 48hrs.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "70000",
+                    "priceCurrency": "CLP"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plan Identidad Digital",
+                  "description": "Diseño a medida con dominio propio .cl, narrativa de marca y SEO básico.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "280000",
+                    "priceCurrency": "CLP"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plan Presencia Pyme",
+                  "description": "Web corporativa robusta con integraciones, optimización de carga y base para escalabilidad.",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "550000",
+                    "priceCurrency": "CLP"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
