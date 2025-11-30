@@ -3,5 +3,7 @@ Allow: /
 Disallow: /private/
 Disallow: /admin/
 Disallow: /tmp/
+Disallow: /index_backup.html
+Disallow: /txt/
 
 Sitemap: https://mmdigital.com/sitemap.xml
