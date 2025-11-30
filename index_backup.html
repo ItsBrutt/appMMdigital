@@ -386,12 +386,12 @@
                     </p>
                     <form class="contact-form" aria-label="Formulario de contacto">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <input type="text" placeholder="Nombre" required aria-label="Nombre" oninvalid="this.setCustomValidity('Por favor, completa este campo')" oninput="this.setCustomValidity('')">
-                            <input type="email" placeholder="Email" required aria-label="Email" oninvalid="this.setCustomValidity('Por favor, introduce una dirección de correo válida')" oninput="this.setCustomValidity('')">
+                            <input type="text" placeholder="Nombre" required aria-label="Nombre">
+                            <input type="email" placeholder="Email" required aria-label="Email">
                         </div>
                         <select
                             style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 8px; color: #fff;"
-                            aria-label="Etapa actual" required oninvalid="this.setCustomValidity('Por favor, selecciona una opción de la lista')" oninput="this.setCustomValidity('')">
+                            aria-label="Etapa actual">
                             <option value="" style="background: #0f172a;">Selecciona tu etapa actual</option>
                             <option value="semilla" style="background: #0f172a;">Plan Semilla (Validación)
                             </option>
@@ -405,7 +405,7 @@
                             </option>
                         </select>
                         <textarea rows="5" placeholder="Cuéntanos más sobre tu proyecto..."
-                            aria-label="Mensaje" required oninvalid="this.setCustomValidity('Por favor, escribe un mensaje')" oninput="this.setCustomValidity('')"></textarea>
+                            aria-label="Mensaje"></textarea>
                         <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Iniciar
                             Conversación</button>
                     </form>

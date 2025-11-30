@@ -1036,4 +1036,42 @@ details[open] .faq-content {
     .footer-separator {
         display: none;
     }
+}/* Enhanced Pricing Cards */
+.price-card {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent-color);
+}
+
+.price-card.featured {
+    border-color: var(--gold-accent);
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.1);
+}
+
+.price-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.price-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.price-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.price-card:nth-child(4) {
+    animation-delay: 0.8s;
 }
