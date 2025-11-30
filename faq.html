@@ -43,7 +43,8 @@
             <img src="images/logo.png" alt="MM Digital Logo" class="logo-img">
             <span class="logo-text">MM Digital</span>
         </a>
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación" aria-expanded="false"
+            aria-controls="navMenu">
             <span></span>
             <span></span>
             <span></span>
@@ -62,7 +63,7 @@
     <header style="padding-top: 140px; padding-bottom: 4rem; text-align: center;">
         <div class="container">
             <h1
-                style="font-size: 3rem; margin-bottom: 1.5rem; background: linear-gradient(to right, #fff, #cbd5e1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                style="font-size: 3rem; margin-bottom: 1.5rem; background: linear-gradient(to right, #fff, #cbd5e1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
                 Preguntas <span
                     style="color: var(--accent-color); -webkit-text-fill-color: var(--accent-color);">Frecuentes</span>
             </h1>
@@ -77,35 +78,191 @@
         <!-- FAQ Section -->
         <section id="faq" style="padding: 5rem 2rem;">
             <div class="container">
-                <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+                <div style="max-width: 800px; margin: 0 auto;">
 
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-color);">¿El sitio web es
-                            realmente mío?</h3>
-                        <p style="color: var(--text-muted);">
-                            Absolutamente. Defendemos la <strong>Soberanía Digital</strong>. Al finalizar el proyecto,
-                            te transferimos la propiedad intelectual completa, archivos y bases de datos. No te tomamos
-                            como rehén.
-                        </p>
+                    <!-- 6.1. Propiedad y Aspectos Legales -->
+                    <div style="margin-bottom: 4rem;">
+                        <h2
+                            style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 2rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">
+                            Propiedad y Aspectos Legales
+                        </h2>
+
+                        <details class="glass-card faq-item">
+                            <summary class="faq-summary">
+                                <span style="margin-right: 2rem;">¿El sitio web es realmente mío o dependo de ustedes
+                                    para siempre?</span>
+                                <span class="faq-toggle"></span>
+                            </summary>
+                            <div class="faq-content-wrapper">
+                                <div class="faq-content">
+                                    <p>En MM Digital defendemos la <strong>soberanía digital</strong>. A diferencia de
+                                        plataformas como Wix o Shopify (donde usted "arrienda" el servicio) o agencias
+                                        que retienen las llaves, nosotros desarrollamos bajo estándares de código
+                                        abierto.</p>
+                                    <p style="margin-top: 1rem;">Al finalizar el proyecto y completar el pago, le
+                                        transferimos la <strong>Propiedad Intelectual completa</strong> del sitio, los
+                                        archivos fuente, las bases de datos y las credenciales de administrador. Usted
+                                        es libre de contratar nuestro mantenimiento (recomendado por la experticia
+                                        técnica) o llevar su sitio a otro proveedor. Le entregamos las llaves de su casa
+                                        digital.</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="glass-card faq-item">
+                            <summary class="faq-summary">
+                                <span style="margin-right: 2rem;">¿Por qué sus precios son más altos que los de un
+                                    freelance o una web de $50.000?</span>
+                                <span class="faq-toggle"></span>
+                            </summary>
+                            <div class="faq-content-wrapper">
+                                <div class="faq-content">
+                                    <p>Porque no vendemos un gasto, vendemos una <strong>inversión estructural</strong>.
+                                        Las ofertas "low-cost" suelen basarse en plantillas piratas o genéricas, sin
+                                        optimización, sin seguridad y sin cumplimiento legal.</p>
+                                    <p style="margin-top: 1rem;">Eso genera <strong>Deuda Técnica</strong>: lo que
+                                        ahorra hoy, lo pagará multiplicado mañana en ventas perdidas por lentitud,
+                                        multas legales o costos de reparación cuando el sitio falle. Nuestros precios
+                                        reflejan horas de ingeniería, diseño UX personalizado, configuración de
+                                        seguridad y cumplimiento normativo chileno. Construimos sobre cimientos sólidos,
+                                        no sobre arena.</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="glass-card faq-item">
+                            <summary class="faq-summary">
+                                <span style="margin-right: 2rem;">¿Qué pasa si cambia la Ley de Protección de Datos en
+                                    Chile?</span>
+                                <span class="faq-toggle"></span>
+                            </summary>
+                            <div class="faq-content-wrapper">
+                                <div class="faq-content">
+                                    <p>Nuestros sitios del plan Identidad Digital en adelante se construyen bajo el
+                                        principio de <strong>Privacy by Design</strong>. Cumplimos con la Ley 19.628
+                                        actual y estamos preparados técnicamente para los estándares de la futura
+                                        Agencia de Protección de Datos (gestión de consentimiento granular, derechos
+                                        ARCO).</p>
+                                    <p style="margin-top: 1rem;">Además, nuestro servicio de mantenimiento incluye
+                                        asesoría sobre actualizaciones técnicas necesarias ante cambios normativos.</p>
+                                </div>
+                            </div>
+                        </details>
                     </div>
 
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-color);">¿Por qué sus
-                            precios son diferentes a un freelance?</h3>
-                        <p style="color: var(--text-muted);">
-                            Porque no vendemos un gasto, sino una inversión estructural. Nuestros precios reflejan
-                            ingeniería, cumplimiento normativo y diseño estratégico. Lo barato sale caro en multas y
-                            ventas perdidas.
-                        </p>
+                    <!-- 6.2. Aspectos Técnicos y Escalabilidad -->
+                    <div style="margin-bottom: 4rem;">
+                        <h2
+                            style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 2rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">
+                            Aspectos Técnicos y Escalabilidad
+                        </h2>
+
+                        <details class="glass-card faq-item">
+                            <summary class="faq-summary">
+                                <span style="margin-right: 2rem;">¿Qué significa que mi web sea "Escalable"?</span>
+                                <span class="faq-toggle"></span>
+                            </summary>
+                            <div class="faq-content-wrapper">
+                                <div class="faq-content">
+                                    <p>Significa que su sitio web puede crecer al ritmo de su negocio sin necesidad de
+                                        ser demolido y reconstruido. Gracias a nuestra <strong>arquitectura
+                                            modular</strong> (Plan Presencia Pyme e Imperio), si hoy necesita solo
+                                        mostrar servicios, pero en seis meses quiere agregar una tienda online, un
+                                        sistema de reservas o un aula virtual, podemos integrar esos módulos sobre la
+                                        base existente.</p>
+                                    <p style="margin-top: 1rem;">Esto protege su inversión inicial y le da agilidad
+                                        comercial.</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="glass-card faq-item">
+                            <summary class="faq-summary">
+                                <span style="margin-right: 2rem;">¿Por qué es tan importante la velocidad de carga (Core
+                                    Web Vitals)?</span>
+                                <span class="faq-toggle"></span>
+                            </summary>
+                            <div class="faq-content-wrapper">
+                                <div class="faq-content">
+                                    <p>La velocidad es dinero. Google ha determinado que si un sitio tarda más de 3
+                                        segundos en cargar en un móvil, la probabilidad de rebote (que el usuario se
+                                        vaya) aumenta en más del 30%.</p>
+                                    <p style="margin-top: 1rem;">Además, la velocidad es un factor directo de
+                                        posicionamiento SEO. MM Digital optimiza imágenes, código y servidores para
+                                        garantizar tiempos de carga ultrarrápidos, mejorando su visibilidad y sus
+                                        ventas.</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="glass-card faq-item">
+                            <summary class="faq-summary">
+                                <span style="margin-right: 2rem;">¿Utilizan plantillas o diseñan desde cero?</span>
+                                <span class="faq-toggle"></span>
+                            </summary>
+                            <div class="faq-content-wrapper">
+                                <div class="faq-content">
+                                    <p>Depende del plan y la necesidad estratégica:</p>
+                                    <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                                        <li style="margin-bottom: 0.5rem;">En <strong>Plan Semilla</strong>, utilizamos
+                                            estructuras base optimizadas (frameworks) para reducir costos y tiempos de
+                                            validación, personalizando la marca.</li>
+                                        <li>En <strong>Planes Identidad, Presencia e Imperio</strong>, desarrollamos
+                                            soluciones a medida o utilizamos temas base ultra-ligeros (como Hello
+                                            Elementor o Bricks) sobre los cuales construimos una interfaz única.</li>
+                                    </ul>
+                                    <p style="margin-top: 1rem;">No compramos plantillas comerciales pesadas
+                                        ("Themeforest") que traen código basura y vulnerabilidades. Privilegiamos la
+                                        limpieza del código.</p>
+                                </div>
+                            </div>
+                        </details>
                     </div>
 
-                    <div class="glass-card" style="padding: 1.5rem;">
-                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-color);">¿Qué es la
-                            Escalabilidad Modular?</h3>
-                        <p style="color: var(--text-muted);">
-                            Significa que tu inversión está protegida. Si hoy necesitas una web informativa y mañana una
-                            tienda online, construimos sobre lo que ya tienes sin demoler nada.
-                        </p>
+                    <!-- 6.3. Soporte y Garantía -->
+                    <div style="margin-bottom: 4rem;">
+                        <h2
+                            style="color: var(--accent-color); font-size: 1.8rem; margin-bottom: 2rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">
+                            Soporte y Garantía
+                        </h2>
+
+                        <details class="glass-card faq-item">
+                            <summary class="faq-summary">
+                                <span style="margin-right: 2rem;">¿Qué sucede si mi sitio web falla después de la
+                                    entrega?</span>
+                                <span class="faq-toggle"></span>
+                            </summary>
+                            <div class="faq-content-wrapper">
+                                <div class="faq-content">
+                                    <p>Todos nuestros proyectos incluyen un periodo de <strong>Marcha Blanca de 30
+                                            días</strong> post-lanzamiento, donde corregimos cualquier error de
+                                        programación o configuración sin costo adicional.</p>
+                                    <p style="margin-top: 1rem;">Posterior a eso, ofrecemos planes de Mantenimiento Web
+                                        (Soporte Técnico) que aseguran la continuidad operativa, actualizaciones de
+                                        seguridad y respaldos. Si el sitio falla por una causa imputable a nuestro
+                                        código original (garantía de por vida sobre bugs de desarrollo), lo reparamos
+                                        sin costo.</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="glass-card faq-item">
+                            <summary class="faq-summary">
+                                <span style="margin-right: 2rem;">¿Me enseñarán a usar mi sitio web?</span>
+                                <span class="faq-toggle"></span>
+                            </summary>
+                            <div class="faq-content-wrapper">
+                                <div class="faq-content">
+                                    <p>Absolutamente. Creemos en el empoderamiento del cliente. Todos los planes
+                                        incluyen una <strong>sesión de capacitación</strong> (grabada para su referencia
+                                        futura) donde le enseñamos a editar textos, subir imágenes, gestionar productos
+                                        (en E-commerce) y revisar los pedidos.</p>
+                                    <p style="margin-top: 1rem;">Entregamos un panel de administración simplificado e
+                                        intuitivo, para que no necesite ser ingeniero para cambiar una foto o un precio.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
                     </div>
 
                 </div>
@@ -130,13 +287,80 @@
     </footer>
 
     <!-- WhatsApp CTA -->
-    <a href="https://wa.me/56959839335?text=Hola%20MM%20Digital%2C%20tengo%20una%20pregunta%20que%20no%20aparece%20en%20las%20FAQ."
-        class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#ffffff">
-            <path
-                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-        </svg>
-    </a>
+    <aside>
+        <a href="https://wa.me/56959839335?text=Hola%20MM%20Digital%2C%20tengo%20una%20pregunta%20que%20no%20aparece%20en%20las%20FAQ."
+            class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#ffffff">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+        </a>
+    </aside>
+
+    <!-- JSON-LD Schema for FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "¿El sitio web es realmente mío o dependo de ustedes para siempre?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En MM Digital defendemos la soberanía digital. A diferencia de plataformas como Wix o Shopify (donde usted 'arrienda' el servicio) o agencias que retienen las llaves, nosotros desarrollamos bajo estándares de código abierto. Al finalizar el proyecto y completar el pago, le transferimos la Propiedad Intelectual completa del sitio, los archivos fuente, las bases de datos y las credenciales de administrador."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Por qué sus precios son más altos que los de un freelance o una web de $50.000?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Porque no vendemos un gasto, vendemos una inversión estructural. Las ofertas 'low-cost' suelen basarse en plantillas piratas o genéricas, sin optimización, sin seguridad y sin cumplimiento legal. Eso genera Deuda Técnica. Nuestros precios reflejan horas de ingeniería, diseño UX personalizado, configuración de seguridad y cumplimiento normativo chileno."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Qué pasa si cambia la Ley de Protección de Datos en Chile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestros sitios del plan Identidad Digital en adelante se construyen bajo el principio de Privacy by Design. Cumplimos con la Ley 19.628 actual y estamos preparados técnicamente para los estándares de la futura Agencia de Protección de Datos (gestión de consentimiento granular, derechos ARCO)."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Qué significa que mi web sea 'Escalable'?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Significa que su sitio web puede crecer al ritmo de su negocio sin necesidad de ser demolido y reconstruido. Gracias a nuestra arquitectura modular (Plan Presencia Pyme e Imperio), si hoy necesita solo mostrar servicios, pero en seis meses quiere agregar una tienda online, un sistema de reservas o un aula virtual, podemos integrar esos módulos sobre la base existente."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Por qué es tan importante la velocidad de carga (Core Web Vitals)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La velocidad es dinero. Google ha determinado que si un sitio tarda más de 3 segundos en cargar en un móvil, la probabilidad de rebote aumenta en más del 30%. Además, la velocidad es un factor directo de posicionamiento SEO. MM Digital optimiza imágenes, código y servidores para garantizar tiempos de carga ultrarrápidos."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Utilizan plantillas o diseñan desde cero?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del plan y la necesidad estratégica. En Plan Semilla, utilizamos estructuras base optimizadas (frameworks) para reducir costos y tiempos de validación, personalizando la marca. En Planes Identidad, Presencia e Imperio, desarrollamos soluciones a medida o utilizamos temas base ultra-ligeros sobre los cuales construimos una interfaz única."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Qué sucede si mi sitio web falla después de la entrega?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Todos nuestros proyectos incluyen un periodo de Marcha Blanca de 30 días post-lanzamiento, donde corregimos cualquier error de programación o configuración sin costo adicional. Posterior a eso, ofrecemos planes de Mantenimiento Web (Soporte Técnico) que aseguran la continuidad operativa."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Me enseñarán a usar mi sitio web?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutamente. Creemos en el empoderamiento del cliente. Todos los planes incluyen una sesión de capacitación (grabada para su referencia futura) donde le enseñamos a editar textos, subir imágenes, gestionar productos (en E-commerce) y revisar los pedidos. Entregamos un panel de administración simplificado e intuitivo."
+        }
+      }]
+    }
+    </script>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>

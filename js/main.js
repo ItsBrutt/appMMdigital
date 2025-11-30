@@ -6,24 +6,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.getElementById('navMenu');
 
     if (menuBtn && navMenu) {
-        menuBtn.addEventListener('click', () => {
+        const toggleMenu = () => {
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
             menuBtn.classList.toggle('active');
             navMenu.classList.toggle('active');
-        });
+        };
+
+        const closeMenu = () => {
+            menuBtn.classList.remove('active');
+            navMenu.classList.remove('active');
+            menuBtn.setAttribute('aria-expanded', 'false');
+        };
+
+        menuBtn.addEventListener('click', toggleMenu);
 
         // Close menu when clicking a link
         navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                menuBtn.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
+            link.addEventListener('click', closeMenu);
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-                menuBtn.classList.remove('active');
-                navMenu.classList.remove('active');
+                closeMenu();
             }
         });
     }
