@@ -481,7 +481,7 @@ header#inicio {
 }
 
 .features-list li::before {
-    content: 'âœ“';
+    content: '\2713';
     color: var(--accent-color);
 }
 
