@@ -58,21 +58,71 @@
             "email": "contacto@mmdigital.com",
             "availableLanguage": ["Spanish"]
           }
-        }
+        },
+        {
+            "@type": "Product",
+            "name": "Servicios de Desarrollo Web MM Digital",
+            "description": "Servicios de arquitectura digital, cumplimiento normativo y desarrollo web de alto rendimiento.",
+            "brand": {
+              "@type": "Brand",
+              "name": "MM Digital"
+            },
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Plan Semilla",
+                "description": "Cimiento Inicial. Landing Page SPA, Hosting Optimizado.",
+                "price": "280000",
+                "priceCurrency": "CLP",
+                "url": "https://mmdigital.com/#servicios"
+              },
+              {
+                "@type": "Offer",
+                "name": "Identidad Digital",
+                "description": "Estructura Profesional. Web Corporativa, Pack Legal, Seguridad Robusta.",
+                "price": "550000",
+                "priceCurrency": "CLP",
+                "url": "https://mmdigital.com/#servicios"
+              },
+              {
+                "@type": "Offer",
+                "name": "Presencia Pyme",
+                "description": "Expansión Operativa. Arquitectura Modular, Integración CRM/Agenda.",
+                "price": "850000",
+                "priceCurrency": "CLP",
+                "url": "https://mmdigital.com/#servicios"
+              },
+              {
+                "@type": "Offer",
+                "name": "Imperio Digital",
+                "description": "Escala Masiva. E-commerce Avanzado, Logística Inteligente.",
+                "price": "1200000",
+                "priceCurrency": "CLP",
+                "url": "https://mmdigital.com/#servicios"
+              }
+            ]
+          }
       ]
     }
     </script>
+    <link rel="preload" as="image" href="images/logo.png">
 </head>
 
 <body>
 
     <!-- Navigation -->
     <nav class="glass-card nav-header" aria-label="Navegación principal">
-        <a href="#" class="logo-container">
-            <img src="images/logo.png" alt="MM Digital Logo" class="logo-img">
+        <a href="#inicio" class="logo-container">
+            <picture>
+                <!-- <source srcset="images/logo.avif" type="image/avif"> -->
+                <!-- <source srcset="images/logo.webp" type="image/webp"> -->
+                <img src="images/logo.png" loading="lazy" alt="MM Digital Logo" class="logo-img" width="150"
+                    height="40">
+            </picture>
             <span class="logo-text">MM Digital</span>
         </a>
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación" aria-expanded="false"
+            aria-controls="navMenu">
             <span></span>
             <span></span>
             <span></span>
