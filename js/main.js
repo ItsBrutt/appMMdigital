@@ -60,8 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('section h2, .timeline-item, .demo-preview, .price-card, .contact-form').forEach(el => {
-        el.classList.add('fade-in-up');
+    document.querySelectorAll('section h2, .timeline-item, .demo-preview, .price-card, .contact-form, .animate-on-scroll').forEach(el => {
+        if (!el.classList.contains('animate-on-scroll')) {
+            el.classList.add('fade-in-up');
+        }
         observer.observe(el);
     });
 });
