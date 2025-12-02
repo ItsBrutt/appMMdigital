@@ -2,6 +2,7 @@
     "name": "mm-digital",
     "version": "1.0.0",
     "description": "MM Digital - Tu Viaje de Identidad Digital. Plataforma web para transformación digital escalable.",
+    "type": "module",
     "main": "index.html",
     "scripts": {
         "dev": "npx live-server --port=3000 --open=index.html",
@@ -15,7 +16,21 @@
         "validate:html": "npx html-validate \"*.html\"",
         "test": "npm run format:check && npm run lint:css && npm run lint:js && npm run validate:html",
         "deploy:prep": "npm run test && npm run build",
-        "serve:dist": "npx live-server dist --port=8080"
+        "serve:dist": "npx live-server dist --port=8080",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{css,scss}": [
+            "stylelint --fix",
+            "prettier --write"
+        ],
+        "*.{html,json,md}": [
+            "prettier --write"
+        ]
     },
     "keywords": [
         "digital-identity",
@@ -32,6 +47,8 @@
         "eslint": "^9.15.0",
         "eslint-config-prettier": "^9.1.0",
         "html-validate": "^8.11.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.2.7",
         "live-server": "^1.2.2",
         "prettier": "^3.2.5",
         "stylelint": "^16.2.1",

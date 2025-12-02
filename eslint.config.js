@@ -1,6 +1,7 @@
 // eslint.config.js - Modern Flat Config (ESLint 9+)
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
+import globals from 'globals';
 
 export default [
     // Base recommended rules
@@ -15,43 +16,33 @@ export default [
             ecmaVersion: 2024,
             sourceType: 'module',
             globals: {
-                // Browser environment
-                window: 'readonly',
-                document: 'readonly',
-                navigator: 'readonly',
-                console: 'readonly',
-                // DOM APIs
-                Element: 'readonly',
-                HTMLElement: 'readonly',
-                NodeList: 'readonly',
-                // Modern APIs
-                IntersectionObserver: 'readonly',
-                fetch: 'readonly',
-                // Events
-                Event: 'readonly',
-                CustomEvent: 'readonly'
-            }
+                ...globals.browser,
+                ...globals.node,
+            },
         },
 
         rules: {
             // ===== PREVENCIÓN DE ERRORES =====
             'no-undef': 'error',
-            'no-unused-vars': ['warn', {
-                'argsIgnorePattern': '^_',
-                'varsIgnorePattern': '^_'
-            }],
+            'no-unused-vars': [
+                'warn',
+                {
+                    argsIgnorePattern: '^_',
+                    varsIgnorePattern: '^_',
+                },
+            ],
             'no-unreachable': 'error',
             'no-constant-condition': 'error',
             'no-dupe-keys': 'error',
             'no-duplicate-case': 'error',
 
             // ===== MEJORES PRÁCTICAS =====
-            'eqeqeq': ['error', 'always'],
+            eqeqeq: ['error', 'always'],
             'no-eval': 'error',
             'no-implied-eval': 'error',
             'no-new-func': 'error',
             'no-with': 'error',
-            'curly': ['error', 'all'],
+            curly: ['error', 'all'],
             'dot-notation': 'error',
             'no-multi-spaces': 'error',
             'no-return-assign': 'error',
@@ -67,10 +58,13 @@ export default [
             'no-var': 'error',
             'prefer-template': 'warn',
             'object-shorthand': 'warn',
-            'prefer-destructuring': ['warn', {
-                'array': false,
-                'object': true
-            }],
+            'prefer-destructuring': [
+                'warn',
+                {
+                    array: false,
+                    object: true,
+                },
+            ],
 
             // ===== LIMPIEZA DE CÓDIGO =====
             'no-console': 'off',
@@ -89,17 +83,12 @@ export default [
             // ===== RENDIMIENTO =====
             'no-loop-func': 'error',
             'no-new-object': 'error',
-            'no-array-constructor': 'error'
-        }
+            'no-array-constructor': 'error',
+        },
     },
 
     // Ignorar archivos
     {
-        ignores: [
-            'node_modules/**',
-            'dist/**',
-            '*.min.js',
-            '.git/**'
-        ]
-    }
+        ignores: ['node_modules/**', 'dist/**', '*.min.js', '.git/**'],
+    },
 ];

@@ -1,290 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#0f172a" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0f172a">
+        <!-- SEO Meta Tags -->
+        <title>Demo Pre-Plan - Tu Nombre Aquí | MM Digital</title>
+        <meta
+            name="description"
+            content="Ejemplo de estructura web accesible para emprendedores. Plan Semilla de MM Digital: tu primer paso hacia una identidad digital profesional."
+        />
+        <meta name="keywords" content="landing page, web emprendedor, plan semilla, mm digital, diseño web chile" />
+        <meta name="author" content="MM Digital" />
+        <meta name="robots" content="noindex, nofollow" />
+        <!-- No indexar demos -->
+        <link rel="canonical" href="https://mmdigital.com/demo.html" />
 
-    <!-- SEO Meta Tags -->
-    <title>Demo Pre-Plan - Tu Nombre Aquí | MM Digital</title>
-    <meta name="description"
-        content="Ejemplo de estructura web accesible para emprendedores. Plan Semilla de MM Digital: tu primer paso hacia una identidad digital profesional.">
-    <meta name="keywords" content="landing page, web emprendedor, plan semilla, mm digital, diseño web chile">
-    <meta name="author" content="MM Digital">
-    <meta name="robots" content="noindex, nofollow"> <!-- No indexar demos -->
-    <link rel="canonical" href="https://mmdigital.com/demo.html">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mmdigital.com/demo.html" />
+        <meta property="og:title" content="Demo Pre-Plan - Tu Primer Paso Digital" />
+        <meta
+            property="og:description"
+            content="Estructura simple, profesional y accesible. Valida tu idea sin grandes costos."
+        />
+        <meta property="og:image" content="https://mmdigital.com/images/og-demo.jpg" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mmdigital.com/demo.html">
-    <meta property="og:title" content="Demo Pre-Plan - Tu Primer Paso Digital">
-    <meta property="og:description"
-        content="Estructura simple, profesional y accesible. Valida tu idea sin grandes costos.">
-    <meta property="og:image" content="https://mmdigital.com/images/og-demo.jpg">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Demo Pre-Plan - Tu Nombre Aquí",
+                "description": "Ejemplo de estructura web accesible para emprendedores.",
+                "url": "https://mmdigital.com/demo.html"
+            }
+        </script>
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Demo Pre-Plan - Tu Nombre Aquí",
-      "description": "Ejemplo de estructura web accesible para emprendedores.",
-      "url": "https://mmdigital.com/demo.html"
-    }
-    </script>
+        <style>
+            :root {
+                /* Premium Color Palette (Matched with Main Site) */
+                --primary-color: #0f172a;
+                --secondary-color: #1e293b;
+                --accent-color: #38bdf8;
+                --text-color: #f8fafc;
+                --text-muted: #94a3b8;
+                --glass-bg: rgba(30, 41, 59, 0.7);
+                --glass-border: rgba(255, 255, 255, 0.1);
+            }
 
-    <style>
-        :root {
-            /* Premium Color Palette (Matched with Main Site) */
-            --primary-color: #0f172a;
-            --secondary-color: #1e293b;
-            --accent-color: #38bdf8;
-            --text-color: #f8fafc;
-            --text-muted: #94a3b8;
-            --glass-bg: rgba(30, 41, 59, 0.7);
-            --glass-border: rgba(255, 255, 255, 0.1);
-        }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+            body {
+                font-family: 'Outfit', sans-serif;
+                background-color: var(--primary-color);
+                color: var(--text-color);
+                line-height: 1.6;
+            }
 
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: var(--primary-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0 1.5rem;
+            }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
+            /* Header */
+            header {
+                padding: 1.5rem 0;
+                border-bottom: 1px solid var(--glass-border);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
-        /* Header */
-        header {
-            padding: 1.5rem 0;
-            border-bottom: 1px solid var(--glass-border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+            .logo {
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: var(--text-color);
+            }
 
-        .logo {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--text-color);
-        }
+            .btn {
+                display: inline-block;
+                padding: 0.5rem 1.2rem;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                font-size: 0.9rem;
+            }
 
-        .btn {
-            display: inline-block;
-            padding: 0.5rem 1.2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-        }
+            .btn-primary {
+                background: linear-gradient(135deg, var(--accent-color), #0ea5e9);
+                color: #fff;
+                box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+            }
 
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-color), #0ea5e9);
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
-        }
+            .btn-primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6);
+            }
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6);
-        }
+            .btn-outline {
+                border: 1px solid var(--glass-border);
+                color: var(--text-color);
+                background: rgba(255, 255, 255, 0.05);
+            }
 
-        .btn-outline {
-            border: 1px solid var(--glass-border);
-            color: var(--text-color);
-            background: rgba(255, 255, 255, 0.05);
-        }
+            .btn-outline:hover {
+                border-color: var(--accent-color);
+                color: var(--accent-color);
+            }
 
-        .btn-outline:hover {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-        }
+            /* Hero */
+            .hero {
+                padding: 5rem 0;
+                text-align: center;
+            }
 
-        /* Hero */
-        .hero {
-            padding: 5rem 0;
-            text-align: center;
-        }
+            .hero h1 {
+                font-size: 2.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.1;
+                background: linear-gradient(to right, #fff, #cbd5e1);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
 
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            line-height: 1.1;
-            background: linear-gradient(to right, #fff, #cbd5e1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+            .hero p {
+                font-size: 1.1rem;
+                color: var(--text-muted);
+                margin-bottom: 2rem;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+            /* Sections */
+            section {
+                padding: 4rem 0;
+                border-top: 1px solid var(--glass-border);
+            }
 
-        /* Sections */
-        section {
-            padding: 4rem 0;
-            border-top: 1px solid var(--glass-border);
-        }
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+                color: var(--text-color);
+            }
 
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-color);
-        }
+            .services-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
+            .service-card {
+                background: var(--glass-bg);
+                padding: 2rem;
+                border-radius: 16px;
+                border: 1px solid var(--glass-border);
+                backdrop-filter: blur(8px);
+            }
 
-        .service-card {
-            background: var(--glass-bg);
-            padding: 2rem;
-            border-radius: 16px;
-            border: 1px solid var(--glass-border);
-            backdrop-filter: blur(8px);
-        }
+            .service-card h3 {
+                color: var(--accent-color);
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+            }
 
-        .service-card h3 {
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
+            .service-card p {
+                color: var(--text-muted);
+                font-size: 0.95rem;
+            }
 
-        .service-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
+            /* Footer */
+            footer {
+                text-align: center;
+                padding: 3rem 0;
+                border-top: 1px solid var(--glass-border);
+                font-size: 0.9rem;
+                color: var(--text-muted);
+            }
 
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 3rem 0;
-            border-top: 1px solid var(--glass-border);
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
+            /* Demo Banner */
+            .demo-banner {
+                background: linear-gradient(90deg, var(--accent-color), #0ea5e9);
+                color: #fff;
+                text-align: center;
+                padding: 0.6rem;
+                font-size: 0.9rem;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                font-weight: 500;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            }
 
-        /* Demo Banner */
-        .demo-banner {
-            background: linear-gradient(90deg, var(--accent-color), #0ea5e9);
-            color: #fff;
-            text-align: center;
-            padding: 0.6rem;
-            font-size: 0.9rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            font-weight: 500;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
+            .demo-banner a {
+                color: #fff;
+                text-decoration: underline;
+                font-weight: 700;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
 
-        .demo-banner a {
-            color: #fff;
-            text-decoration: underline;
-            font-weight: 700;
-            margin-left: 5px;
-        }
-    </style>
-</head>
+    <body>
+        <div class="demo-banner">
+            Esta es una demostración del <strong>Plan Semilla (Pre-Plan)</strong>.
+            <a href="index.html">Volver a MM Digital</a>
+        </div>
 
-<body>
+        <div class="container">
+            <header>
+                <div class="logo">Tu Nombre/Negocio</div>
+                <a href="#contacto" class="btn btn-outline">Contacto</a>
+            </header>
 
-    <div class="demo-banner">
-        Esta es una demostración del <strong>Plan Semilla (Pre-Plan)</strong>. <a href="index.html">Volver a MM
-            Digital</a>
-    </div>
+            <main>
+                <section class="hero">
+                    <h1>Tu Primer Paso Digital</h1>
+                    <p>
+                        Una estructura simple, profesional y accesible para comenzar tu viaje de identidad digital.
+                        Valida tu idea hoy mismo.
+                    </p>
+                    <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                </section>
 
-    <div class="container">
-        <header>
-            <div class="logo">Tu Nombre/Negocio</div>
-            <a href="#contacto" class="btn btn-outline">Contacto</a>
-        </header>
+                <section id="sobre-mi">
+                    <h2>Sobre Mí</h2>
+                    <p style="color: var(--text-muted); max-width: 700px">
+                        Hola, soy [Tu Nombre]. Ayudo a mis clientes a [Tu Propuesta de Valor]. Este espacio es mi carta
+                        de presentación digital, diseñada para ser rápida, clara y efectiva. Aquí puedes contar tu
+                        historia brevemente y conectar con tu audiencia.
+                    </p>
+                </section>
 
-        <main>
-
-            <section class="hero">
-                <h1>Tu Primer Paso Digital</h1>
-                <p>Una estructura simple, profesional y accesible para comenzar tu viaje de identidad digital. Valida tu
-                    idea hoy mismo.</p>
-                <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
-            </section>
-
-            <section id="sobre-mi">
-                <h2>Sobre Mí</h2>
-                <p style="color: var(--text-muted); max-width: 700px;">
-                    Hola, soy [Tu Nombre]. Ayudo a mis clientes a [Tu Propuesta de Valor].
-                    Este espacio es mi carta de presentación digital, diseñada para ser rápida,
-                    clara y efectiva. Aquí puedes contar tu historia brevemente y conectar con tu audiencia.
-                </p>
-            </section>
-
-            <section id="servicios">
-                <h2>Mis Servicios</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Servicio Principal</h3>
-                        <p>Descripción breve de tu servicio estrella. ¿Qué problema resuelves y cómo mejoras la vida de
-                            tu
-                            cliente?</p>
+                <section id="servicios">
+                    <h2>Mis Servicios</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <h3>Servicio Principal</h3>
+                            <p>
+                                Descripción breve de tu servicio estrella. ¿Qué problema resuelves y cómo mejoras la
+                                vida de tu cliente?
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <h3>Servicio Secundario</h3>
+                            <p>Descripción de tu segundo servicio. Enfócate en el beneficio directo y tangible.</p>
+                        </div>
+                        <div class="service-card">
+                            <h3>Producto / Asesoría</h3>
+                            <p>
+                                Si vendes productos o asesorías, puedes listarlos aquí con un enlace directo a WhatsApp.
+                            </p>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <h3>Servicio Secundario</h3>
-                        <p>Descripción de tu segundo servicio. Enfócate en el beneficio directo y tangible.</p>
+                </section>
+
+                <section id="contacto">
+                    <h2>Hablemos</h2>
+                    <p style="margin-bottom: 2rem; color: var(--text-muted)">
+                        ¿Listo para trabajar juntos? Contáctame directamente por el medio que prefieras.
+                    </p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+                        <a href="#" class="btn btn-primary">WhatsApp Directo</a>
+                        <a href="mailto:ejemplo@email.com" class="btn btn-outline">Enviar Email</a>
                     </div>
-                    <div class="service-card">
-                        <h3>Producto / Asesoría</h3>
-                        <p>Si vendes productos o asesorías, puedes listarlos aquí con un enlace directo a WhatsApp.</p>
-                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>&copy; 2025 Tu Negocio. Creado con el <strong>Plan Semilla</strong> de MM Digital.</p>
+                <div style="margin-top: 1.5rem">
+                    <a
+                        href="index.html"
+                        style="
+                            color: var(--accent-color);
+                            text-decoration: none;
+                            font-weight: 600;
+                            border: 1px solid var(--accent-color);
+                            padding: 0.5rem 1rem;
+                            border-radius: 50px;
+                            font-size: 0.85rem;
+                        "
+                    >
+                        Escalar a Identidad Digital &rarr;
+                    </a>
                 </div>
-            </section>
-
-            <section id="contacto">
-                <h2>Hablemos</h2>
-                <p style="margin-bottom: 2rem; color: var(--text-muted);">¿Listo para trabajar juntos? Contáctame
-                    directamente por el medio que prefieras.</p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#" class="btn btn-primary">WhatsApp Directo</a>
-                    <a href="mailto:ejemplo@email.com" class="btn btn-outline">Enviar Email</a>
-                </div>
-            </section>
-
-        </main>
-
-        <footer>
-            <p>&copy; 2025 Tu Negocio. Creado con el <strong>Plan Semilla</strong> de MM Digital.</p>
-            <div style="margin-top: 1.5rem;">
-                <a href="index.html"
-                    style="color: var(--accent-color); text-decoration: none; font-weight: 600; border: 1px solid var(--accent-color); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem;">
-                    Escalar a Identidad Digital &rarr;
-                </a>
-            </div>
-        </footer>
-    </div>
-
-</body>
-
+            </footer>
+        </div>
+    </body>
 </html>
